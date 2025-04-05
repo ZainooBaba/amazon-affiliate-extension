@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon-Affiliate-Extension",
+    "version": "1.1",
+    "description": "Silently cookies Amazon with your affiliate tag before checkout.",
+    "permissions": ["tabs"],
+    "host_permissions": ["*://*.amazon.com/*"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": ["*://*.amazon.com/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_title": "Amazon Booster"
+    }
+  }
+  
