@@ -1,5 +1,5 @@
 let currentTabId = null;
-const affiliateTag = "yourtag-20";
+const affiliateTag = "indopak02-20";
 const asinList = [
   "B07FZ8S74R",
   "B01N5IB20Q",
